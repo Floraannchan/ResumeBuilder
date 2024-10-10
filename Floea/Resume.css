@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #181818;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.container {
+  width: 700px;
+  height: auto;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  padding: 20px; /* Added padding for cleaner layout */
+}
+
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('240_F_104054084_Ch12dStJmYPdNGUwv73yARVbJ7e4i0Ck.jpg');
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid #333;
+  padding: 20px;
+  position: relative;
+  height: 250px; /* Increased for better image placement */
+}
+
+.name {
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #fff;
+  position: relative;
+}
+
+.job-title {
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6); /* Added subtle background */
+}
+
+.profile-pic img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Added shadow for depth */
+}
+
+.resume-body {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.left-column, .right-column {
+  width: 48%;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ffcc00; /* Added underline */
+}
+
+.experience-item {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.skills-section .skill {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+.stars {
+  color: #ffcc00;
+  font-size: 18px;
+}
+
+.Contact {
+  margin-top: 30px;
+}
+
+.contact-section p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.contact-section p i {
+  margin-right: 10px;
+  color: #ffcc00; /* Added icon color */
+}
+
+/* Button hover effect */
+.job-title:hover {
+  background-color: #ffcc00;
+  color: #1e1e1e;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resume-body {
+    flex-direction: column;
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+  }
+
+  .profile-pic img {
+    width: 150px;
+    height: 150px;
+  }
+}
