@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container_FQA {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar {
+  font-family: "Bebas Neue", sans-serif;
+  width: 100%;
+  border-radius: 35px;
+  border: 1px solid #ffd734;
+}
+.logo {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-size: 40px;
+  text-decoration: none;
+  color: #ffd734;
+  margin: 0 1rem;
+}
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 25px;
+}
+.dropdown-menu {
+  background-color: #ffd734;
+}
+/* .dropdown-menu li a {
+  color: black;
+} */
+
+.title {
+  color: #333;
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.lists {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 60%;
+  margin: 0 auto;
+  /* background-color: #fff;  */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.list {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out,
+    transform 0.3s ease;
+  opacity: 0;
+  text-align: left;
+  transform: translateY(-10px);
+}
+
+.answer.open {
+  max-height: 200px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toggle-btn {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffd734;
+}
+.last-item {
+  border-bottom: none;
+}

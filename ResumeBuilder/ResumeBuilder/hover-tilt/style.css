@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 10%;
+}
+
+.main-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 1%,
+    rgba(253, 187, 45, 1) 88%
+  );
+}
